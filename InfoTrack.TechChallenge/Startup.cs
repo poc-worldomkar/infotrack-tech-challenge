@@ -1,3 +1,5 @@
+using InfoTrack.TechChallenge.Logic;
+using InfoTrack.TechChallenge.WebScraperEngine;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,9 @@ namespace InfoTrack.TechChallenge
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            TextWebScraperEngine.Configure(services);
+            services.AddSingleton<BusinessLogic>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
