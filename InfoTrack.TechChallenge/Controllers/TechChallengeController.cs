@@ -12,7 +12,6 @@ namespace InfoTrack.TechChallenge.Controllers
     {
         private readonly BusinessLogic Logic;
         private const int DefaultMaxResults = 50;
-        private const string DefaultSearchEngine = "Bing";
 
         public TechChallengeController(BusinessLogic logic)
         {
@@ -30,5 +29,12 @@ namespace InfoTrack.TechChallenge.Controllers
                 DefaultMaxResults);
             return seoIndexResult;
         }
+
+        //[HttpPost]
+        //[Route("new-search-engine")]
+        //public async Task<ActionResult> NewSearchEngine()
+        //{
+
+        //}
     }
 }

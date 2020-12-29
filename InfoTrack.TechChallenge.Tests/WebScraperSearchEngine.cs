@@ -20,7 +20,6 @@ namespace InfoTrack.TechChallenge.Tests
                 {
                     SearchEngineName = "Bing",
                     ResultXpathSelector = "//CITE",
-                    UrlFromResultElement = (resultElement) => resultElement.InnerText
                 };
                 var webScraperClient = new WebScraperClient(null);
                 var webScrapeSearchEngine = new TextWebScraperEngine(webScraperClient);

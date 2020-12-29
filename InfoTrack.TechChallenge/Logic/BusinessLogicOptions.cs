@@ -17,14 +17,28 @@ namespace InfoTrack.TechChallenge.Logic
         {
             StaticSearchEngineOptions = new List<WebScraperSearchEngineOptionsInfotrackStatic> {
                 new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Bing", ResultXpathSelector = "//LI[@class=\"b_algo\"]//CITE" },
-                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Google", ResultXpathSelector = "//DIV//A//CITE" }
+                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Google", ResultXpathSelector = "//DIV//A[@href][DIV/CITE]" }
             };
             LiveSearchEngineOptions = new List<WebScraperSearchEngineOptions>
             {
-
+                new WebScraperSearchEngineOptions{
+                    SearchEngineName = "Bing",
+                    ResultXpathSelector = "//LI[@class=\"b_algo\"]//CITE",
+                    SearchEngineBaseUrlPath = "https://www.bing.com/search",
+                    ParameterNameQuery = "q",
+                    ParameterNameRecordsSkip = "first",
+                    DynamicPageSize = true,
+                    IndexStartsAtOne = true },
+                new WebScraperSearchEngineOptions{
+                    SearchEngineName = "Google",
+                    ResultXpathSelector = "//DIV//A[@href][DIV/CITE]",
+                    SearchEngineBaseUrlPath = "https://www.google.com.au/search",
+                    ParameterNameQuery = "q",
+                    ParameterNameRecordsSkip = "start" }
             };
             InfotrackDomains = new List<string> {
                 "infotrack.nz",
+                "infotrack.co.uk",
                 "infotrack.com.au",
                 "infotrackgo.com.au"
             };

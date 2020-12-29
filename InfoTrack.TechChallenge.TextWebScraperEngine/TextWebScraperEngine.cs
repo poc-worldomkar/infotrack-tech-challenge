@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Xml;
@@ -22,35 +23,49 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
         public async Task<IEnumerable<IWebScrapeSearchResult>> SearchWithQueryAsync(IWebScraperSearchEngineOptions options, string query, int maximumResults)
         {
             var searchResultUrls = new List<IWebScrapeSearchResult> { };
-            var remainingResults = maximumResults;
+
+            if (options.ResultXpathSelector == null)
+            {
+                return searchResultUrls;
+            }
 
             int pageNumber = 0;
             int pageSize = 10;
+            int dynamicPageCursorPosition = 0;
+            var remainingResults = maximumResults;
+
             do
             {
-                var page = await WebScraperClient.GetPage(options, query, pageNumber, pageSize);
-
-                if (options?.ResultXpathSelector == null)
+                var page = await WebScraperClient.GetPage(options, query, pageNumber, pageSize, dynamicPageCursorPosition);
+                var xmlResultNodes = page.DocumentElement.SelectNodes(options.ResultXpathSelector);
+                if (page.DocumentElement.ChildNodes.Count == 0 || xmlResultNodes.Count == 0)
                 {
-                    return searchResultUrls;
+                    // Google complains about unusual traffic
                 }
 
-                var xmlResultNodes = page.DocumentElement.SelectNodes(options.ResultXpathSelector);
                 var links = xmlResultNodes.Cast<XmlNode>()
                     .Select(x =>
                     {
-                        var rawUrl = (x.InnerText.StartsWith("http") ? x.InnerText : $"https://{x.InnerText}");
-                        var encodedUrl = HttpUtility.UrlPathEncode(rawUrl);
-                        if (!Uri.TryCreate(encodedUrl, UriKind.RelativeOrAbsolute, out var result))
+                        Uri result = default;
+                        try
                         {
-                            Uri.TryCreate(rawUrl.Split(' ')[0], UriKind.RelativeOrAbsolute, out result);
+                            var extractedUrl = options.UrlFromResultElement(x as XmlElement);
+                            var rawUrl = (extractedUrl.StartsWith("http") ? extractedUrl : $"https://{extractedUrl}");
+                            var encodedUrl = HttpUtility.UrlPathEncode(rawUrl);
+                            if (!Uri.TryCreate(encodedUrl, UriKind.RelativeOrAbsolute, out result))
+                            {
+                                Uri.TryCreate(rawUrl.Split(' ')[0], UriKind.RelativeOrAbsolute, out result);
+                            }
                         }
-
+                        catch (Exception)
+                        {
+                        }
                         return result;
                     })
                     .ToList();
                 if (links.Count() == 0)
                 {
+                    // Out of search results most probably
                     break;
                 }
 
@@ -58,6 +73,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                     links.Select(link => new WebScrapeSearchResult { Url = link })
                 );
                 remainingResults -= links.Count();
+                dynamicPageCursorPosition += links.Count();
                 pageNumber++;
             } while (remainingResults > 0);
             return searchResultUrls.Take(maximumResults);

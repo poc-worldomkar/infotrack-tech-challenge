@@ -7,6 +7,6 @@ namespace InfoTrack.TechChallenge.Abstractions
     {
         string ResultXpathSelector { get; set; }
         Func<XmlElement, string> UrlFromResultElement { get; set; }
-        Uri GetUrl(string query, int pageNumber, int pageSize);
+        Uri GetUrl(string query, int pageNumber, int pageSize, int dynamicPageCursorPosition);
     }
 }

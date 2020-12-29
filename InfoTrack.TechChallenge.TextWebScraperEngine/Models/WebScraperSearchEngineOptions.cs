@@ -10,9 +10,24 @@ namespace InfoTrack.TechChallenge.WebScraperEngine.Models
     {
         public string ResultXpathSelector { get; set; }
         public Func<XmlElement, string> UrlFromResultElement { get; set; }
+
         public string SearchEngineName { get; set; }
 
-        public Uri GetUrl(string query, int pageNumber, int pageSize)
+        public WebScraperSearchEngineOptionsInfotrackStatic()
+        {
+            UrlFromResultElement = (XmlElement resultElement) =>
+            {
+                var resultUrl = resultElement.GetAttribute("href");
+                if (string.IsNullOrWhiteSpace(resultUrl))
+                {
+                    resultUrl = resultElement.InnerText;
+                }
+
+                return resultUrl;
+            };
+        }
+
+        public Uri GetUrl(string query, int pageNumber, int pageSize, int dynamicPageCursorPosition)
         {
             // TODO: behavior based Generalised url formation
             var uri = new Uri($"https://infotrack-tests.infotrack.com.au/{SearchEngineName}/Page{String.Format("{0:00}", pageNumber + 1)}.html");
@@ -30,17 +45,41 @@ namespace InfoTrack.TechChallenge.WebScraperEngine.Models
         public string ParameterNamePage { get; set; } = null;
         public string ParameterNamePageSize { get; set; } = null;
         public string ParameterNameRecordsSkip { get; set; } = null;
+        public bool DynamicPageSize { get; set; } = false;
+        public bool IndexStartsAtOne { get; set; } = false; //  Default is start at 0
 
-        public Uri GetUrl(string query, int pageNumber, int pageSize)
+        public WebScraperSearchEngineOptions()
+        {
+            UrlFromResultElement = (XmlElement resultElement) =>
+            {
+                var resultUrl = resultElement.GetAttribute("href");
+                if (string.IsNullOrWhiteSpace(resultUrl))
+                {
+                    resultUrl = resultElement.InnerText;
+                }
+
+                return resultUrl;
+            };
+        }
+
+        public Uri GetUrl(string query, int pageNumber, int pageSize, int dynamicPageCursorPosition)
         {
             var searchUrlParts = new KeyValueList<string, string> {
                 { ParameterNameQuery, HttpUtility.UrlEncode(query) },
                 { ParameterNamePage, pageNumber.ToString() },
                 { ParameterNamePageSize, pageSize.ToString() },
-                { ParameterNameRecordsSkip, (pageNumber * pageSize).ToString() },
-                { ParameterNameQuery, HttpUtility.UrlEncode(query) }
+                { ParameterNameRecordsSkip,
+                    (DynamicPageSize && dynamicPageCursorPosition != -1)
+                        ? (dynamicPageCursorPosition + (IndexStartsAtOne ? 1: 0)).ToString()
+                        : (pageNumber * pageSize).ToString() },
             };
-            var searchUrl = $"{SearchEngineBaseUrlPath}?" + string.Join("&", searchUrlParts.Where(part => part.Key != null));
+            var searchUrl = $"{SearchEngineBaseUrlPath}?" +
+                string.Join(
+                    "&",
+                    searchUrlParts
+                        .Where(part => !string.IsNullOrWhiteSpace(part.Key))
+                        .Select(part => $"{part.Key}={part.Value}")
+                );
             var uri = new Uri(searchUrl);
             return uri;
         }

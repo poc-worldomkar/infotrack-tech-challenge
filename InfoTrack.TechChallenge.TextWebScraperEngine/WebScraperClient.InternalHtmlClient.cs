@@ -8,7 +8,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
 {
     public partial class WebScraperClient
     {
-        class InternalHtmlClient : IDisposable
+        public class InternalHtmlClient : IDisposable
         {
             private readonly WebBrowser Browser;
             private readonly ILogger Logger;
@@ -20,13 +20,16 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
             private bool Exiting;
             private HtmlDocument Document;
             private string Url;
-            // Workaround magics
-            private const int PageLoadTimeoutCheckInterval = 300;   // 300 mseconds; can later be moved to appsettings
+
+            // Workaround magics -- TODO: Avoid in future
+            private const int PageLoadTimeoutCheckInterval = 50;   // 50 mseconds; can later be moved to appsettings
+            private const int NewRequestCheckInterval = 100;   // 100 mseconds; can later be moved to appsettings
             private const int PageLoadTimeoutInterval = 3000;   // 3 seconds; can later be moved to appsettings
+            private const int PageLoadMessagePumpTimeoutInterval = 700;   // 700 mseconds; can later be moved to appsettings
 
-            private WebBrowserReadyState BrowserReadyState;
+            public bool TimedOut { get; private set; }
 
-            internal InternalHtmlClient(ILogger logger)
+            public InternalHtmlClient(ILogger logger)
             {
                 Logger = logger;
                 PageLoadTimeout = new Timer();
@@ -36,17 +39,18 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                 DocumentReady = new AutoResetEvent(false);
                 NotNavigating = new ManualResetEvent(true);
                 Exiting = false;
+                TimedOut = false;
                 NewRequest = new AutoResetEvent(false);
                 try
                 {
-                    Browser = new WebBrowser() { ScriptErrorsSuppressed = true };
+                    Browser = new WebBrowser() { ScriptErrorsSuppressed = true, Size = new System.Drawing.Size { Width = 1920, Height = 1080 } };
                     Browser.Navigating += WebBrowser_Navigating;
                     Browser.DocumentCompleted += WebBrowser_DocumentCompleted;
-                    BrowserReadyState = Browser.ReadyState;
                 }
                 catch (Exception e)
                 {
                     Logger?.LogError(e.Message);
+                    throw;
                 }
             }
 
@@ -57,15 +61,19 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                 NotNavigating.Reset();
                 NewRequest.Set();
                 DocumentReady.WaitOne();
+                PageLoadTimeout.Stop();
+                // TODO: Replace with message pump
+                Application.DoEvents();
+                NotNavigating.Set();
                 return Document;
             }
 
             public void PumpStaThread()
             {
-                var newRequestAvailable = false;
+                bool newRequestAvailable;
                 while (!Exiting)
                 {
-                    newRequestAvailable = NewRequest.WaitOne(500);
+                    newRequestAvailable = NewRequest.WaitOne(NewRequestCheckInterval);
                     if (Exiting)
                     {
                         break;
@@ -78,8 +86,9 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                     {
                         Browser.Navigate(Url);
                         var succeeded = false;
-                        var timedOut = false;
-                        var remainingTimeOutInterval = PageLoadTimeoutInterval;
+                        TimedOut = false;
+                        // PageLoadTimeout.Start();
+                        var remainingTimeOutInterval = PageLoadTimeoutInterval + PageLoadMessagePumpTimeoutInterval;
                         #region TODO: Replace with message pump (WORKAROUND for time being below)
                         do
                         {
@@ -87,8 +96,8 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                             // TODO: Replace with message pump
                             Application.DoEvents();
                             remainingTimeOutInterval -= PageLoadTimeoutCheckInterval;
-                            timedOut = remainingTimeOutInterval <= 0;
-                        } while (!succeeded && !timedOut);
+                            TimedOut = remainingTimeOutInterval <= 0;
+                        } while (!succeeded && !TimedOut);
                         #endregion
 
                         Document = Browser.Document;
@@ -100,7 +109,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                     }
                     finally
                     {
-                        NotNavigating.Set();
+                        PageLoadTimeout.Stop();
                     }
                 }
             }
@@ -117,21 +126,21 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
 
             private void PageLoadTimeout_Tick(object sender, EventArgs e)
             {
-                if (BrowserReadyState != Browser.ReadyState)
+                // Cancel timeout timer
+                PageLoadTimeout.Stop();
+                // Signal "abort page load" as workaround for pages with script errors
+                // Actual page gets loaded in few hundred ms
+                Browser.Stop();
+                if (Browser.ReadyState == WebBrowserReadyState.Loading)
                 {
-                    BrowserReadyState = Browser.ReadyState;
-                    if (BrowserReadyState == WebBrowserReadyState.Interactive)
-                    {
-                        // Cancel timeout timer
-                        PageLoadTimeout.Stop();
-                        // Signal "abort page load"
-                        Browser.Stop();
-                    }
+                    // DocumentCompleted will not fire
+                    PageLoadComplete.Set();
                 }
             }
 
             public void Dispose()
             {
+                Application.ExitThread();
                 Exiting = true;
             }
         }

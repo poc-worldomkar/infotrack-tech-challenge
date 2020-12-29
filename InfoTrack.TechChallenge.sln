@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0767821-8E78-435F-B365-5AF717CFCE16}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoTrack.TechChallenge.Tests", "InfoTrack.TechChallenge.Tests\InfoTrack.TechChallenge.Tests.csproj", "{15698D8D-5872-471F-9FB6-A943B1581D25}"
