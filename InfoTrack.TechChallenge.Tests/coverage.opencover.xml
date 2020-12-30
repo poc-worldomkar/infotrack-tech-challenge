@@ -1,0 +1,1521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="509" visitedSequencePoints="0" numBranchPoints="78" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="94" minCyclomaticComplexity="0" visitedClasses="0" numClasses="22" visitedMethods="0" numMethods="73" />
+  <Modules>
+    <Module hash="EC03A6BF-23AD-40E6-A22A-F331AEA50580">
+      <ModulePath>InfoTrack.TechChallenge.Abstractions.dll</ModulePath>
+      <ModuleTime>2020-12-30T02:24:00</ModuleTime>
+      <ModuleName>InfoTrack.TechChallenge.Abstractions</ModuleName>
+      <Files />
+      <Classes />
+    </Module>
+    <Module hash="A86D45DD-E935-460A-B1FF-D2BF251DF679">
+      <ModulePath>InfoTrack.TechChallenge.dll</ModulePath>
+      <ModuleTime>2020-12-30T02:24:00</ModuleTime>
+      <ModuleName>InfoTrack.TechChallenge</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Program.cs" />
+        <File uid="2" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Startup.cs" />
+        <File uid="3" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\WeatherForecast.cs" />
+        <File uid="4" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Pages\Error.cshtml.cs" />
+        <File uid="5" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Models\SeoIndexCheckRequest.cs" />
+        <File uid="6" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Logic\BusinessFunctions.cs" />
+        <File uid="7" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Logic\BusinessLogicOptions.cs" />
+        <File uid="8" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Controllers\TechChallengeController.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>InfoTrack.TechChallenge.Program</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Program::Main(System.String[])</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="11" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Microsoft.Extensions.Hosting.IHostBuilder InfoTrack.TechChallenge.Program::CreateHostBuilder(System.String[])</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="18" ordinal="4" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="14" ec="1" el="18" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="43" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>InfoTrack.TechChallenge.Startup</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Microsoft.Extensions.Configuration.IConfiguration InfoTrack.TechChallenge.Startup::get_Configuration()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="32" ordinal="6" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="33" ordinal="7" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="34" ordinal="8" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="23" ec="1" el="34" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="29" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="2" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="44" ordinal="5" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="45" ordinal="6" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="47" ordinal="7" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="48" ordinal="8" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="50" ordinal="9" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="51" ordinal="10" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="52" ordinal="11" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="54" ordinal="12" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="56" ordinal="13" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="57" ordinal="14" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="58" ordinal="15" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="59" ordinal="16" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="60" ordinal="17" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="61" ordinal="18" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="63" ordinal="19" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="64" ordinal="20" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="65" ordinal="21" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="66" ordinal="22" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="67" ordinal="23" sl="67" sc="1" el="67" ec="2" bec="2" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="68" ordinal="24" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="69" ordinal="25" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="70" ordinal="26" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="71" ordinal="27" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="72" ordinal="28" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="39" ordinal="0" path="0" offset="27" offsetend="29" sl="39" fileid="2" />
+                <BranchPoint vc="0" uspid="39" ordinal="1" path="1" offset="27" offsetend="40" sl="39" fileid="2" />
+                <BranchPoint vc="0" uspid="67" ordinal="0" path="0" offset="31" offsetend="33" sl="67" fileid="2" />
+                <BranchPoint vc="0" uspid="67" ordinal="1" path="1" offset="31" offsetend="47" sl="67" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="38" ec="1" el="72" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="14" ec="1" el="17" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>InfoTrack.TechChallenge.WeatherForecast</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime InfoTrack.TechChallenge.WeatherForecast::get_Date()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 InfoTrack.TechChallenge.WeatherForecast::get_TemperatureC()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 InfoTrack.TechChallenge.WeatherForecast::get_TemperatureF()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WeatherForecast::get_Summary()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>InfoTrack.TechChallenge.Pages.ErrorModel</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.Pages.ErrorModel::get_RequestId()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.Pages.ErrorModel::get_ShowRequestId()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Pages.ErrorModel::OnGet()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="4" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="23" ordinal="0" path="0" offset="8" offsetend="10" sl="23" fileid="4" />
+                <BranchPoint vc="0" uspid="23" ordinal="1" path="1" offset="8" offsetend="14" sl="23" fileid="4" />
+                <BranchPoint vc="0" uspid="23" ordinal="2" path="0" offset="20" offsetend="22" sl="23" fileid="4" />
+                <BranchPoint vc="0" uspid="23" ordinal="3" path="1" offset="20" offsetend="34" sl="23" fileid="4" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Pages.ErrorModel::.ctor(Microsoft.Extensions.Logging.ILogger`1&lt;InfoTrack.TechChallenge.Pages.ErrorModel&gt;)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="13" ec="1" el="16" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>InfoTrack.TechChallenge.Models.SeoIndexCheckRequest</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.Models.SeoIndexCheckRequest::get_SearchEngine()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.Models.SeoIndexCheckRequest::get_Query()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="6" ec="1" el="6" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.Models.SeoIndexCheckRequest::get_UseStaticPages()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 InfoTrack.TechChallenge.Models.SeoIndexCheckRequest::get_MaximumResults()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.Logic.BusinessLogic</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Logic.BusinessLogic::.ctor(InfoTrack.TechChallenge.Abstractions.IWebScraperSearchEngine)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.Logic.BusinessLogic/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.Logic.BusinessLogic/&lt;&gt;c__DisplayClass2_0::&lt;InfotrackSeoCheckIndexes&gt;b__0(System.String)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="2" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="26" ordinal="0" path="0" offset="307" offsetend="309" sl="26" fileid="6" />
+                <BranchPoint vc="0" uspid="26" ordinal="1" path="1" offset="307" offsetend="329" sl="26" fileid="6" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="26" ec="1" el="26" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="79" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>InfoTrack.TechChallenge.Logic.BusinessLogicOptions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.List`1&lt;System.String&gt; InfoTrack.TechChallenge.Logic.BusinessLogicOptions::get_InfotrackDomains()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>InfoTrack.TechChallenge.Abstractions.IWebScraperSearchEngineOptions InfoTrack.TechChallenge.Logic.BusinessLogicOptions::GetSearchEngineOptions(System.String,System.Boolean)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="49" ordinal="1" sl="49" sc="1" el="49" ec="2" bec="2" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="51" ordinal="3" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="52" ordinal="4" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="55" ordinal="5" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="56" ordinal="6" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="57" ordinal="7" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="49" ordinal="0" path="0" offset="17" offsetend="19" sl="49" fileid="7" />
+                <BranchPoint vc="0" uspid="49" ordinal="1" path="1" offset="17" offsetend="48" sl="49" fileid="7" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="48" ec="1" el="57" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions&gt; InfoTrack.TechChallenge.Logic.BusinessLogicOptions::GetSearchEngines()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="60" ordinal="0" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="61" ordinal="1" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="62" ordinal="2" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="63" ordinal="3" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="64" ordinal="4" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="65" ordinal="5" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="66" ordinal="6" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="67" ordinal="7" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="68" ordinal="8" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="69" ordinal="9" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="70" ordinal="10" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="71" ordinal="11" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="72" ordinal="12" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="60" ec="1" el="72" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="28" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Logic.BusinessLogicOptions::AddNewSearchEngine(InfoTrack.TechChallenge.Abstractions.IWebScraperSearchEngineOptions)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="75" ordinal="0" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="76" ordinal="1" sl="76" sc="1" el="76" ec="2" bec="2" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="77" ordinal="2" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="78" ordinal="3" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="79" ordinal="4" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="80" ordinal="5" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="81" ordinal="6" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="82" ordinal="7" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="83" ordinal="8" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="84" ordinal="9" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="86" ordinal="10" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="87" ordinal="11" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="88" ordinal="12" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="89" ordinal="13" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="90" ordinal="14" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="91" ordinal="15" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="92" ordinal="16" sl="92" sc="1" el="92" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="93" ordinal="17" sl="93" sc="1" el="93" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="94" ordinal="18" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="95" ordinal="19" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="96" ordinal="20" sl="96" sc="1" el="96" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="97" ordinal="21" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="98" ordinal="22" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="99" ordinal="23" sl="99" sc="1" el="99" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="100" ordinal="24" sl="100" sc="1" el="100" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="101" ordinal="25" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="102" ordinal="26" sl="102" sc="1" el="102" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="103" ordinal="27" sl="103" sc="1" el="103" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="76" ordinal="0" path="0" offset="9" offsetend="11" sl="76" fileid="7" />
+                <BranchPoint vc="0" uspid="76" ordinal="1" path="1" offset="9" offsetend="62" sl="76" fileid="7" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="75" ec="1" el="103" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="29" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Logic.BusinessLogicOptions::.cctor()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="21" ordinal="4" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="22" ordinal="5" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="23" ordinal="6" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="24" ordinal="7" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="25" ordinal="8" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="26" ordinal="9" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="27" ordinal="10" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="28" ordinal="11" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="29" ordinal="12" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="30" ordinal="13" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="31" ordinal="14" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="32" ordinal="15" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="33" ordinal="16" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="34" ordinal="17" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="35" ordinal="18" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="36" ordinal="19" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="37" ordinal="20" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="38" ordinal="21" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="39" ordinal="22" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="40" ordinal="23" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="41" ordinal="24" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="42" ordinal="25" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="43" ordinal="26" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="44" ordinal="27" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="45" ordinal="28" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="17" ec="1" el="45" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="21" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>InfoTrack.TechChallenge.Controllers.TechChallengeController</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions&gt; InfoTrack.TechChallenge.Controllers.TechChallengeController::GetSearchEngines()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="53" ordinal="1" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="54" ordinal="2" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="55" ordinal="3" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="52" ec="1" el="55" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Microsoft.AspNetCore.Mvc.ActionResult InfoTrack.TechChallenge.Controllers.TechChallengeController::NewSearchEngine(InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="62" ordinal="0" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="63" ordinal="1" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="64" ordinal="2" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="65" ordinal="3" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="66" ordinal="4" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="69" ordinal="5" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="71" ordinal="6" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="72" ordinal="7" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="73" ordinal="8" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="74" ordinal="9" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="75" ordinal="10" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="78" ordinal="11" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="79" ordinal="12" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="62" ec="1" el="79" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Controllers.TechChallengeController::.ctor(InfoTrack.TechChallenge.Logic.BusinessLogic)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="23" ordinal="3" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="20" ec="1" el="23" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.Controllers.TechChallengeController/&lt;SeoIndexCheck&gt;d__3</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="14" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Controllers.TechChallengeController/&lt;SeoIndexCheck&gt;d__3::MoveNext()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="30" ordinal="1" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="35" ordinal="4" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="36" ordinal="5" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="37" ordinal="6" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="38" ordinal="7" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="39" ordinal="8" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="40" ordinal="9" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="42" ordinal="10" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="43" ordinal="11" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="44" ordinal="12" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="46" ordinal="13" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="29" ec="1" el="46" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="8B31A34E-E41D-440F-A79C-FF56381FA856">
+      <ModulePath>InfoTrack.TechChallenge.TextWebScraperEngine.dll</ModulePath>
+      <ModuleTime>2020-12-30T02:24:00</ModuleTime>
+      <ModuleName>InfoTrack.TechChallenge.TextWebScraperEngine</ModuleName>
+      <Files>
+        <File uid="9" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\TextWebScraperEngine.cs" />
+        <File uid="10" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\WebScraperClient.cs" />
+        <File uid="11" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\WebScraperClient.InternalHtmlClient.cs" />
+        <File uid="12" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\Models\KeyValueList.cs" />
+        <File uid="13" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\Models\WebScraperSearchEngineOptions.cs" />
+        <File uid="14" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge.TextWebScraperEngine\Models\WebScrapeSearchResult.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine::Configure(Microsoft.Extensions.DependencyInjection.IServiceCollection)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="85" ordinal="0" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="86" ordinal="1" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="87" ordinal="2" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="88" ordinal="3" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="85" ec="1" el="88" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine::.ctor(InfoTrack.TechChallenge.Abstractions.IWebScraperClient)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="17" ec="1" el="20" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="16" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;&gt;c__DisplayClass2_0</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="16" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Uri InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;&gt;c__DisplayClass2_0::&lt;SearchWithQueryAsync&gt;b__0(System.Xml.XmlNode)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="50" ordinal="0" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="51" ordinal="1" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="53" ordinal="2" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="54" ordinal="3" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="55" ordinal="4" sl="55" sc="1" el="55" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="56" ordinal="5" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="57" ordinal="6" sl="57" sc="1" el="57" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="58" ordinal="7" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="59" ordinal="8" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="60" ordinal="9" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="61" ordinal="10" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="62" ordinal="11" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="63" ordinal="12" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="64" ordinal="13" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="65" ordinal="14" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="66" ordinal="15" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="55" ordinal="0" path="0" offset="38" offsetend="40" sl="55" fileid="9" />
+                <BranchPoint vc="0" uspid="55" ordinal="1" path="1" offset="38" offsetend="53" sl="55" fileid="9" />
+                <BranchPoint vc="0" uspid="57" ordinal="2" path="0" offset="78" offsetend="80" sl="57" fileid="9" />
+                <BranchPoint vc="0" uspid="57" ordinal="3" path="1" offset="78" offsetend="102" sl="57" fileid="9" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="50" ec="1" el="66" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;&gt;c</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>InfoTrack.TechChallenge.WebScraperEngine.Models.WebScrapeSearchResult InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;&gt;c::&lt;SearchWithQueryAsync&gt;b__2_1(System.Uri)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="75" ordinal="0" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="75" ec="1" el="75" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="30" visitedSequencePoints="0" numBranchPoints="12" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;SearchWithQueryAsync&gt;d__2</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="12" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="30" visitedSequencePoints="0" numBranchPoints="12" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.TextWebScraperEngine/&lt;SearchWithQueryAsync&gt;d__2::MoveNext()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="31" ordinal="5" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="32" ordinal="6" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="33" ordinal="7" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="34" ordinal="8" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="37" ordinal="9" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="38" ordinal="10" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="39" ordinal="11" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="40" ordinal="12" sl="40" sc="1" el="40" ec="2" bec="4" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="41" ordinal="13" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="45" ordinal="14" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="48" ordinal="15" sl="48" sc="1" el="48" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="49" ordinal="16" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="52" ordinal="17" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="67" ordinal="18" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="68" ordinal="19" sl="68" sc="1" el="68" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="69" ordinal="20" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="71" ordinal="21" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="74" ordinal="22" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="76" ordinal="23" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="77" ordinal="24" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="78" ordinal="25" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="79" ordinal="26" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="80" ordinal="27" sl="80" sc="1" el="80" ec="2" bec="2" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="81" ordinal="28" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="82" ordinal="29" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="26" ordinal="0" path="0" offset="78" offsetend="80" sl="26" fileid="9" />
+                <BranchPoint vc="0" uspid="26" ordinal="1" path="1" offset="78" offsetend="93" sl="26" fileid="9" />
+                <BranchPoint vc="0" uspid="80" ordinal="11" path="1" offset="637" offsetend="127" sl="80" fileid="9" />
+                <BranchPoint vc="0" uspid="40" ordinal="2" path="0" offset="338" offsetend="340" sl="40" fileid="9" />
+                <BranchPoint vc="0" uspid="40" ordinal="3" path="1" offset="338" offsetend="356" sl="40" fileid="9" />
+                <BranchPoint vc="0" uspid="40" ordinal="4" path="0" offset="361" offsetend="363" sl="40" fileid="9" />
+                <BranchPoint vc="0" uspid="40" ordinal="5" path="1" offset="361" offsetend="381" sl="40" fileid="9" />
+                <BranchPoint vc="0" uspid="48" ordinal="6" path="0" offset="405" offsetend="407" sl="48" fileid="9" />
+                <BranchPoint vc="0" uspid="48" ordinal="7" path="1" offset="405" offsetend="441" sl="48" fileid="9" />
+                <BranchPoint vc="0" uspid="68" ordinal="8" path="0" offset="474" offsetend="476" sl="68" fileid="9" />
+                <BranchPoint vc="0" uspid="68" ordinal="9" path="1" offset="474" offsetend="482" sl="68" fileid="9" />
+                <BranchPoint vc="0" uspid="80" ordinal="10" path="0" offset="637" offsetend="642" sl="80" fileid="9" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="82" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="90" visitedSequencePoints="0" numBranchPoints="16" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="7" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::LoadXmlTree(System.Windows.Forms.HtmlDocument,System.Xml.XmlDocument)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="93" ordinal="0" sl="93" sc="1" el="93" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="94" ordinal="1" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="95" ordinal="2" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="93" ec="1" el="95" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="12" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="21" visitedSequencePoints="0" numBranchPoints="12" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::ToXmlElement(System.Windows.Forms.HtmlElement,System.Xml.XmlElement)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="98" ordinal="0" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="99" ordinal="1" sl="99" sc="1" el="99" ec="2" bec="6" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="100" ordinal="2" sl="100" sc="1" el="100" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="101" ordinal="3" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="104" ordinal="4" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="105" ordinal="5" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="106" ordinal="6" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="107" ordinal="7" sl="107" sc="1" el="107" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="109" ordinal="8" sl="109" sc="1" el="109" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="110" ordinal="9" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="111" ordinal="10" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="112" ordinal="11" sl="112" sc="1" el="112" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="113" ordinal="12" sl="113" sc="1" el="113" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="114" ordinal="13" sl="114" sc="1" el="114" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="115" ordinal="14" sl="115" sc="1" el="115" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="116" ordinal="15" sl="116" sc="1" el="116" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="117" ordinal="16" sl="117" sc="1" el="117" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="118" ordinal="17" sl="118" sc="1" el="118" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="119" ordinal="18" sl="119" sc="1" el="119" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="120" ordinal="19" sl="120" sc="1" el="120" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="121" ordinal="20" sl="121" sc="1" el="121" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="99" ordinal="0" path="0" offset="26" offsetend="28" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="99" ordinal="2" path="0" offset="45" offsetend="47" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="99" ordinal="1" path="1" offset="26" offsetend="76" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="99" ordinal="3" path="1" offset="45" offsetend="76" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="99" ordinal="4" path="0" offset="79" offsetend="81" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="99" ordinal="5" path="1" offset="79" offsetend="87" sl="99" fileid="10" />
+                <BranchPoint vc="0" uspid="109" ordinal="6" path="0" offset="178" offsetend="180" sl="109" fileid="10" />
+                <BranchPoint vc="0" uspid="109" ordinal="7" path="1" offset="178" offsetend="205" sl="109" fileid="10" />
+                <BranchPoint vc="0" uspid="114" ordinal="8" path="0" offset="239" offsetend="241" sl="114" fileid="10" />
+                <BranchPoint vc="0" uspid="116" ordinal="11" path="1" offset="301" offsetend="263" sl="116" fileid="10" />
+                <BranchPoint vc="0" uspid="116" ordinal="10" path="0" offset="301" offsetend="303" sl="116" fileid="10" />
+                <BranchPoint vc="0" uspid="114" ordinal="9" path="1" offset="239" offsetend="328" sl="114" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="98" ec="1" el="121" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Thread InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::RunInBrowserThreadOnce(InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/StaBrowserAction)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="126" ordinal="0" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="126" ec="1" el="126" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="27" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Thread InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::RunInBrowserThread(InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/StaBrowserAction,System.Boolean)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="128" ordinal="0" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="129" ordinal="1" sl="129" sc="1" el="129" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="130" ordinal="2" sl="130" sc="1" el="130" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="131" ordinal="3" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="132" ordinal="4" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="133" ordinal="5" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="134" ordinal="6" sl="134" sc="1" el="134" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="135" ordinal="7" sl="135" sc="1" el="135" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="136" ordinal="8" sl="136" sc="1" el="136" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="137" ordinal="9" sl="137" sc="1" el="137" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="138" ordinal="10" sl="138" sc="1" el="138" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="139" ordinal="11" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="140" ordinal="12" sl="140" sc="1" el="140" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="141" ordinal="13" sl="141" sc="1" el="141" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="142" ordinal="14" sl="142" sc="1" el="142" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="143" ordinal="15" sl="143" sc="1" el="143" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="144" ordinal="16" sl="144" sc="1" el="144" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="145" ordinal="17" sl="145" sc="1" el="145" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="146" ordinal="18" sl="146" sc="1" el="146" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="147" ordinal="19" sl="147" sc="1" el="147" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="148" ordinal="20" sl="148" sc="1" el="148" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="149" ordinal="21" sl="149" sc="1" el="149" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="150" ordinal="22" sl="150" sc="1" el="150" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="152" ordinal="23" sl="152" sc="1" el="152" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="153" ordinal="24" sl="153" sc="1" el="153" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="154" ordinal="25" sl="154" sc="1" el="154" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="155" ordinal="26" sl="155" sc="1" el="155" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="142" ordinal="0" path="0" offset="25" offsetend="27" sl="142" fileid="10" />
+                <BranchPoint vc="0" uspid="142" ordinal="1" path="1" offset="25" offsetend="49" sl="142" fileid="10" />
+                <BranchPoint vc="0" uspid="143" ordinal="2" path="0" offset="68" offsetend="70" sl="143" fileid="10" />
+                <BranchPoint vc="0" uspid="143" ordinal="3" path="1" offset="68" offsetend="84" sl="143" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="128" ec="1" el="155" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::Dispose()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="158" ordinal="0" sl="158" sc="1" el="158" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="159" ordinal="1" sl="159" sc="1" el="159" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="160" ordinal="2" sl="160" sc="1" el="160" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="158" ec="1" el="160" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::&lt;.ctor&gt;b__9_0(System.Func`2&lt;System.String,System.Windows.Forms.HtmlDocument&gt;,System.Func`1&lt;System.Boolean&gt;)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="49" ordinal="0" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="50" ordinal="1" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="51" ordinal="2" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="52" ordinal="3" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="53" ordinal="4" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="54" ordinal="5" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="55" ordinal="6" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="57" ordinal="7" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="58" ordinal="8" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="49" ec="1" el="58" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="26" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient::.ctor(Microsoft.Extensions.Logging.ILogger`1&lt;InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient&gt;)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="31" ordinal="6" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="32" ordinal="7" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="33" ordinal="8" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="34" ordinal="9" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="35" ordinal="10" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="36" ordinal="11" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="37" ordinal="12" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="38" ordinal="13" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="39" ordinal="14" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="40" ordinal="15" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="41" ordinal="16" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="42" ordinal="17" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="43" ordinal="18" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="44" ordinal="19" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="45" ordinal="20" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="46" ordinal="21" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="47" ordinal="22" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="48" ordinal="23" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="56" ordinal="24" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="59" ordinal="25" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="25" ec="1" el="59" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="17" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/&lt;GetPage&gt;d__10</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="17" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/&lt;GetPage&gt;d__10::MoveNext()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="70" ordinal="0" sl="70" sc="1" el="70" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="71" ordinal="1" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="72" ordinal="2" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="74" ordinal="3" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="76" ordinal="4" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="77" ordinal="5" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="78" ordinal="6" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="79" ordinal="7" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="80" ordinal="8" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="81" ordinal="9" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="82" ordinal="10" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="84" ordinal="11" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="85" ordinal="12" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="86" ordinal="13" sl="86" sc="1" el="86" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="87" ordinal="14" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="89" ordinal="15" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="90" ordinal="16" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="86" ordinal="0" path="0" offset="253" offsetend="255" sl="86" fileid="10" />
+                <BranchPoint vc="0" uspid="86" ordinal="1" path="1" offset="253" offsetend="258" sl="86" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="70" ec="1" el="90" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="85" visitedSequencePoints="0" numBranchPoints="16" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="8" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::get_TimedOut()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="30" ec="1" el="30" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Windows.Forms.HtmlDocument InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::GetPage(System.String)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="58" ordinal="0" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="59" ordinal="1" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="60" ordinal="2" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="61" ordinal="3" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="62" ordinal="4" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="63" ordinal="5" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="64" ordinal="6" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="66" ordinal="7" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="67" ordinal="8" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="68" ordinal="9" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="69" ordinal="10" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="58" ec="1" el="69" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="12" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="33" visitedSequencePoints="0" numBranchPoints="12" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="12" minCyclomaticComplexity="12" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::PumpStaThread()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="72" ordinal="0" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="74" ordinal="1" sl="74" sc="1" el="74" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="75" ordinal="2" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="76" ordinal="3" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="77" ordinal="4" sl="77" sc="1" el="77" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="78" ordinal="5" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="79" ordinal="6" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="81" ordinal="7" sl="81" sc="1" el="81" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="82" ordinal="8" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="83" ordinal="9" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="86" ordinal="10" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="87" ordinal="11" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="88" ordinal="12" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="89" ordinal="13" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="91" ordinal="14" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="94" ordinal="15" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="95" ordinal="16" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="97" ordinal="17" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="98" ordinal="18" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="99" ordinal="19" sl="99" sc="1" el="99" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="100" ordinal="20" sl="100" sc="1" el="100" ec="2" bec="4" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="103" ordinal="21" sl="103" sc="1" el="103" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="104" ordinal="22" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="105" ordinal="23" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="106" ordinal="24" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="107" ordinal="25" sl="107" sc="1" el="107" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="108" ordinal="26" sl="108" sc="1" el="108" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="109" ordinal="27" sl="109" sc="1" el="109" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="111" ordinal="28" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="112" ordinal="29" sl="112" sc="1" el="112" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="113" ordinal="30" sl="113" sc="1" el="113" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="114" ordinal="31" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="115" ordinal="32" sl="115" sc="1" el="115" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="74" ordinal="11" path="1" offset="252" offsetend="6" sl="74" fileid="11" />
+                <BranchPoint vc="0" uspid="77" ordinal="0" path="0" offset="29" offsetend="31" sl="77" fileid="11" />
+                <BranchPoint vc="0" uspid="77" ordinal="1" path="1" offset="29" offsetend="37" sl="77" fileid="11" />
+                <BranchPoint vc="0" uspid="81" ordinal="2" path="0" offset="43" offsetend="45" sl="81" fileid="11" />
+                <BranchPoint vc="0" uspid="81" ordinal="3" path="1" offset="43" offsetend="51" sl="81" fileid="11" />
+                <BranchPoint vc="0" uspid="100" ordinal="7" path="1" offset="151" offsetend="88" sl="100" fileid="11" />
+                <BranchPoint vc="0" uspid="100" ordinal="4" path="0" offset="133" offsetend="135" sl="100" fileid="11" />
+                <BranchPoint vc="0" uspid="100" ordinal="5" path="1" offset="133" offsetend="146" sl="100" fileid="11" />
+                <BranchPoint vc="0" uspid="100" ordinal="6" path="0" offset="151" offsetend="153" sl="100" fileid="11" />
+                <BranchPoint vc="0" uspid="108" ordinal="8" path="0" offset="195" offsetend="197" sl="108" fileid="11" />
+                <BranchPoint vc="0" uspid="108" ordinal="9" path="1" offset="195" offsetend="200" sl="108" fileid="11" />
+                <BranchPoint vc="0" uspid="74" ordinal="10" path="0" offset="252" offsetend="257" sl="74" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="72" ec="1" el="115" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::WebBrowser_DocumentCompleted(System.Object,System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="118" ordinal="0" sl="118" sc="1" el="118" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="119" ordinal="1" sl="119" sc="1" el="119" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="120" ordinal="2" sl="120" sc="1" el="120" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="118" ec="1" el="120" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::WebBrowser_Navigating(System.Object,System.Windows.Forms.WebBrowserNavigatingEventArgs)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="123" ordinal="0" sl="123" sc="1" el="123" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="124" ordinal="1" sl="124" sc="1" el="124" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="125" ordinal="2" sl="125" sc="1" el="125" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="123" ec="1" el="125" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::PageLoadTimeout_Tick(System.Object,System.EventArgs)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="128" ordinal="0" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="130" ordinal="1" sl="130" sc="1" el="130" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="133" ordinal="2" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="134" ordinal="3" sl="134" sc="1" el="134" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="135" ordinal="4" sl="135" sc="1" el="135" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="137" ordinal="5" sl="137" sc="1" el="137" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="138" ordinal="6" sl="138" sc="1" el="138" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="139" ordinal="7" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="134" ordinal="0" path="0" offset="41" offsetend="43" sl="134" fileid="11" />
+                <BranchPoint vc="0" uspid="134" ordinal="1" path="1" offset="41" offsetend="57" sl="134" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="128" ec="1" el="139" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::Dispose()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="142" ordinal="0" sl="142" sc="1" el="142" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="143" ordinal="1" sl="143" sc="1" el="143" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="144" ordinal="2" sl="144" sc="1" el="144" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="145" ordinal="3" sl="145" sc="1" el="145" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="142" ec="1" el="145" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="22" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.WebScraperClient/InternalHtmlClient::.ctor(Microsoft.Extensions.Logging.ILogger)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="33" ordinal="1" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="34" ordinal="2" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="35" ordinal="3" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="36" ordinal="4" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="37" ordinal="5" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="38" ordinal="6" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="39" ordinal="7" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="40" ordinal="8" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="41" ordinal="9" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="42" ordinal="10" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="43" ordinal="11" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="45" ordinal="12" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="46" ordinal="13" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="47" ordinal="14" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="48" ordinal="15" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="49" ordinal="16" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="50" ordinal="17" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="51" ordinal="18" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="52" ordinal="19" sl="52" sc="1" el="52" ec="2" bec="2" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="53" ordinal="20" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="0" uspid="55" ordinal="21" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="52" ordinal="0" path="0" offset="252" offsetend="254" sl="52" fileid="11" />
+                <BranchPoint vc="0" uspid="52" ordinal="1" path="1" offset="252" offsetend="257" sl="52" fileid="11" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="32" ec="1" el="55" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.Models.KeyValueList`2</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.Models.KeyValueList`2::Add(TKey,TValue)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="0" uspid="10" ordinal="2" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="10" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="22" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="7" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::get_SearchEngineName()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::get_StaticPages()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::get_SearchEngineBaseUrlPath()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::get_ResultXpathSelector()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Func`2&lt;System.Xml.XmlElement,System.String&gt; InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::get_UrlFromResultElement()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Uri InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::GetUrl(System.String,System.Int32,System.Int32,System.Int32)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="36" ordinal="1" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="37" ordinal="2" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="38" ordinal="3" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="34" ec="1" el="38" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptionsInfotrackStatic::.ctor()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="2" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="25" ordinal="6" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="26" ordinal="7" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="27" ordinal="8" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="28" ordinal="9" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="29" ordinal="10" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="30" ordinal="11" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="31" ordinal="12" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="24" ordinal="0" path="0" offset="21" offsetend="23" sl="24" fileid="13" />
+                <BranchPoint vc="0" uspid="24" ordinal="1" path="1" offset="21" offsetend="32" sl="24" fileid="13" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="19" ec="1" el="31" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="44" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="13" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_SearchEngineName()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="43" ec="1" el="43" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_StaticPages()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="44" ec="1" el="44" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_SearchEngineBaseUrlPath()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="45" ordinal="0" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="45" ec="1" el="45" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_ResultXpathSelector()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="46" ordinal="0" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="46" ec="1" el="46" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_ParameterNameQuery()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="47" ordinal="0" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="47" ec="1" el="47" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_ParameterNamePage()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="48" ec="1" el="48" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_ParameterNamePageSize()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="49" ordinal="0" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="49" ec="1" el="49" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_ParameterNameRecordsSkip()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="50" ordinal="0" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="50" ec="1" el="50" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_DynamicPageSize()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="51" ordinal="0" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="51" ec="1" el="51" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_IndexStartsAtOne()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="52" ec="1" el="52" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Func`2&lt;System.Xml.XmlElement,System.String&gt; InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::get_UrlFromResultElement()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="54" ordinal="0" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="54" ec="1" el="54" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="8" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="20" visitedSequencePoints="0" numBranchPoints="8" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="8" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Uri InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::GetUrl(System.String,System.Int32,System.Int32,System.Int32)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="71" ordinal="0" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="72" ordinal="1" sl="72" sc="1" el="72" ec="2" bec="8" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="73" ordinal="2" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="74" ordinal="3" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="75" ordinal="4" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="76" ordinal="5" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="77" ordinal="6" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="78" ordinal="7" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="79" ordinal="8" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="80" ordinal="9" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="81" ordinal="10" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="82" ordinal="11" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="83" ordinal="12" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="84" ordinal="13" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="85" ordinal="14" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="86" ordinal="15" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="87" ordinal="16" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="88" ordinal="17" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="89" ordinal="18" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="90" ordinal="19" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="72" ordinal="0" path="0" offset="39" offsetend="41" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="1" path="1" offset="39" offsetend="44" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="2" path="0" offset="93" offsetend="95" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="3" path="1" offset="93" offsetend="100" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="4" path="0" offset="98" offsetend="100" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="5" path="1" offset="98" offsetend="113" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="6" path="0" offset="121" offsetend="123" sl="72" fileid="13" />
+                <BranchPoint vc="0" uspid="72" ordinal="7" path="1" offset="121" offsetend="126" sl="72" fileid="13" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="11" offset="11" sc="0" sl="71" ec="1" el="90" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.WebScraperEngine.Models.WebScraperSearchEngineOptions::.ctor()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="56" ordinal="0" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="57" ordinal="1" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="58" ordinal="2" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="59" ordinal="3" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="60" ordinal="4" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="61" ordinal="5" sl="61" sc="1" el="61" ec="2" bec="2" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="62" ordinal="6" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="63" ordinal="7" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="64" ordinal="8" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="65" ordinal="9" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="66" ordinal="10" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="67" ordinal="11" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="0" uspid="68" ordinal="12" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="61" ordinal="0" path="0" offset="21" offsetend="23" sl="61" fileid="13" />
+                <BranchPoint vc="0" uspid="61" ordinal="1" path="1" offset="21" offsetend="32" sl="61" fileid="13" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="12" offset="12" sc="0" sl="56" ec="1" el="68" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.WebScraperEngine.Models.WebScrapeSearchResult</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Uri InfoTrack.TechChallenge.WebScraperEngine.Models.WebScrapeSearchResult::get_Url()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="77ECD3D5-37A9-42B5-9E17-8D9992F9F445">
+      <ModulePath>InfoTrack.TechChallenge.Views.dll</ModulePath>
+      <ModuleTime>2020-12-30T02:24:00</ModuleTime>
+      <ModuleName>InfoTrack.TechChallenge.Views</ModuleName>
+      <Files>
+        <File uid="15" fullPath="C:\Users\gumtr\source\repos\InfoTrack.TechChallenge\InfoTrack.TechChallenge\Pages\Error.cshtml" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>InfoTrack.TechChallenge.Pages.Pages_Error/&lt;ExecuteAsync&gt;d__0</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void InfoTrack.TechChallenge.Pages.Pages_Error/&lt;ExecuteAsync&gt;d__0::MoveNext()</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="4" ordinal="0" sl="4" sc="1" el="4" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="2" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="15" />
+                <SequencePoint vc="0" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="10" ordinal="0" path="0" offset="70" offsetend="72" sl="10" fileid="15" />
+                <BranchPoint vc="0" uspid="10" ordinal="1" path="1" offset="70" offsetend="136" sl="10" fileid="15" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="4" ec="1" el="15" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
