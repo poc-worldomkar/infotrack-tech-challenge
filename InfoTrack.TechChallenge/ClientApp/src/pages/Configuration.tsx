@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme: any) => ({
 
 const Configuration = (props: ConfigurationProps) => {
   const { searchEngines } = props;
-  const [showAddSearchEngineForm, setShowAddSearchEngineForm] = useState(true);
+  const [showAddSearchEngineForm, setShowAddSearchEngineForm] = useState(false);
   const classes = useStyles();
 
   const searchEngineListItems = useMemo(() => {

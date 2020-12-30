@@ -158,13 +158,13 @@ const Home = () => {
           Check SEO Index
         </Button>
       </Grid>
-      <Grid item>
-        {result.length > 0 && (
+      {result.length > 0 && (
+        <Grid item>
           <Typography variant='h6' component='h2'>
             SEO Indexes: {result.join(', ')}
           </Typography>
-        )}
-      </Grid>
+        </Grid>
+      )}
       {errorResult && (
         <>
           <Grid item>
