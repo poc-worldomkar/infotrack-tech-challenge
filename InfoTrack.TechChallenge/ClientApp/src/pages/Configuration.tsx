@@ -5,16 +5,15 @@ import {
   CardContent,
   CardHeader,
   Chip,
-  Grid,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
   makeStyles,
+  Paper,
   Typography,
 } from '@material-ui/core';
 import { AddCircle as AddCircleIcon } from '@material-ui/icons';
-import { Formik } from 'formik';
 import * as React from 'react';
 import { useMemo, useState } from 'react';
 import { connect } from 'react-redux';
@@ -46,13 +45,17 @@ const kvpString = (key: { [key: string]: string } | null): string | null => {
 const useStyles = makeStyles((theme: any) => ({
   card: {
     flex: 1,
+    '& .MuiCardContent-root': {
+      paddingTop: 0,
+      paddingBottom: theme.spacing(2),
+    },
   },
 }));
 
 const Configuration = (props: ConfigurationProps) => {
   const { searchEngines } = props;
-  const classes = useStyles();
   const [showAddSearchEngineForm, setShowAddSearchEngineForm] = useState(true);
+  const classes = useStyles();
 
   const searchEngineListItems = useMemo(() => {
     var searchEngineListItems = searchEngines.map((searchEngine: any) => {
@@ -129,30 +132,36 @@ const Configuration = (props: ConfigurationProps) => {
   };
 
   return (
-    <Box display='flex' flexDirection='column'>
-      <Typography variant='h6' component='h2'>
-        Configuration
-      </Typography>
-      <List>{searchEngineListItems}</List>
-      {!showAddSearchEngineForm && (
-        <Button
-          variant='outlined'
-          color='primary'
-          onClick={() => setShowAddSearchEngineForm(!showAddSearchEngineForm)}
-        >
-          <ListItemIcon>
-            <AddCircleIcon color='primary' />
-          </ListItemIcon>
-          <ListItemText primary='Add new search engine' />
-        </Button>
-      )}
+    <>
+      <Box display='flex' flexDirection='column' mb={2}>
+        <Paper style={{ padding: 16 }}>
+          <Typography variant='h6' component='h2'>
+            Configuration
+          </Typography>
+          <List>{searchEngineListItems}</List>
+          {!showAddSearchEngineForm && (
+            <Button
+              variant='outlined'
+              color='primary'
+              onClick={() =>
+                setShowAddSearchEngineForm(!showAddSearchEngineForm)
+              }
+            >
+              <ListItemIcon>
+                <AddCircleIcon color='primary' />
+              </ListItemIcon>
+              <ListItemText primary='Add new search engine' />
+            </Button>
+          )}
+        </Paper>
+      </Box>
       {showAddSearchEngineForm && (
         <FormAddSearchEngine
           onSubmit={handleNewSearchEngineRequest}
           {...props}
         />
       )}
-    </Box>
+    </>
   );
 };
 

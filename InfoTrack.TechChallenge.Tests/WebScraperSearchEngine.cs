@@ -19,7 +19,7 @@ namespace InfoTrack.TechChallenge.Tests
                 var webScraperOptions = new WebScraperSearchEngineOptionsInfotrackStatic
                 {
                     SearchEngineName = "Bing",
-                    ResultXpathSelector = "//CITE",
+                    ResultXpathSelector = "//cite",
                 };
                 var webScraperClient = new WebScraperClient(null);
                 var webScrapeSearchEngine = new TextWebScraperEngine(webScraperClient);

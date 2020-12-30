@@ -21,13 +21,13 @@ type FormAddSearchEngineProps = {
 
 const newSearchEngine: SearchEngine = {
   searchEngineName: '',
-  searchEngineBaseUrlPath: null,
+  searchEngineBaseUrlPath: '',
   resultXpathSelector: '',
   staticPages: false,
   parameterNameQuery: '',
-  parameterNamePage: null,
-  parameterNamePageSize: null,
-  parameterNameRecordsSkip: null,
+  parameterNamePage: '',
+  parameterNamePageSize: '',
+  parameterNameRecordsSkip: '',
   dynamicPageSize: false,
   indexStartsAtOne: false,
 };
@@ -40,6 +40,9 @@ const TextField = (props: any) => {
       {...props}
       error={meta.touched && meta.error}
       variant='outlined'
+      autoCorrect='off'
+      autoCapitalize='off'
+      spellCheck='false'
       fullWidth
     />
   );
@@ -63,92 +66,85 @@ const FormAddSearchEngine = (props: FormAddSearchEngineProps) => {
         const { staticPages } = values;
         return (
           <form onSubmit={handleSubmit}>
-            <Typography variant='h6' component='h2'>
-              Add new Search Engine
-            </Typography>
-            <Box m={2} style={{ userSelect: 'none' }}>
-              <Paper>
-                <Box p={2}>
-                  <Grid container spacing={2}>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='searchEngineName'
-                        label='Name'
-                        required
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='searchEngineBaseUrlPath'
-                        label='Base Url path'
-                        required
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='resultXpathSelector'
-                        label='Result XPath Selector'
-                        required
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='parameterNameQuery'
-                        label='Query parameter name'
-                        required
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='parameterNamePage'
-                        label='Page parameter name'
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='parameterNamePageSize'
-                        label='Page Size parameter name'
-                      />
-                    </Grid>
-                    <Grid item sm={4}>
-                      <TextField
-                        name='parameterNameRecordsSkip'
-                        label='Skip Records parameter name'
-                      />
-                    </Grid>
-                    <Grid item>
-                      <Checkbox
-                        name='staticPages'
-                        label='Static search engine'
-                      />
-                    </Grid>
-                    <Grid item>
-                      <Checkbox
-                        name='dynamicPageSize'
-                        label='Has flexible page results'
-                      />
-                    </Grid>
-                    <Grid item>
-                      <Checkbox
-                        name='indexStartsAtOne'
-                        label='Index starts at 1'
-                      />
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Button
-                        type='submit'
-                        color='primary'
-                        variant='contained'
-                        disabled={staticPages}
-                        fullWidth
-                      >
-                        Save
-                      </Button>
-                    </Grid>
+            <Paper>
+              <Box p={2} style={{ userSelect: 'none' }}>
+                <Grid container spacing={2}>
+                  <Grid item sm={12}>
+                    <Typography variant='h6' component='h2'>
+                      Add new Search Engine
+                    </Typography>
                   </Grid>
-                </Box>
-              </Paper>
-            </Box>
+                  <Grid item sm={4}>
+                    <TextField name='searchEngineName' label='Name' required />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='searchEngineBaseUrlPath'
+                      label='Base Url path'
+                      required
+                    />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='resultXpathSelector'
+                      label='Result XPath Selector'
+                      required
+                    />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='parameterNameQuery'
+                      label='Query parameter name'
+                      required
+                    />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='parameterNamePage'
+                      label='Page parameter name'
+                    />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='parameterNamePageSize'
+                      label='Page Size parameter name'
+                    />
+                  </Grid>
+                  <Grid item sm={4}>
+                    <TextField
+                      name='parameterNameRecordsSkip'
+                      label='Skip Records parameter name'
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Checkbox name='staticPages' label='Static search engine' />
+                  </Grid>
+                  <Grid item>
+                    <Checkbox
+                      name='dynamicPageSize'
+                      label='Has flexible page results'
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Checkbox
+                      name='indexStartsAtOne'
+                      label='Index starts at 1'
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Button
+                      type='submit'
+                      color='primary'
+                      variant='contained'
+                      disabled={staticPages}
+                      fullWidth
+                    >
+                      Save
+                    </Button>
+                  </Grid>
+                </Grid>
+              </Box>
+            </Paper>
           </form>
         );
       }}

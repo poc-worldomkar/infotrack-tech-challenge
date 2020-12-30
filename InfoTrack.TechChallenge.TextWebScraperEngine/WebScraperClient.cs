@@ -19,6 +19,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
         private ManualResetEvent BrowserReady;
         private Dictionary<string, string> AttributesToCopy;
         private HashSet<string> InnerTextElements;
+        private HashSet<string> ElementsToSkip;
         private delegate HtmlDocument GetPageInternalDelegate(string url, out bool timedOut);
 
         public WebScraperClient(ILogger<WebScraperClient> logger)
@@ -37,6 +38,11 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                 "cite",
                 "span",
                 "p"
+            };
+            ElementsToSkip = new HashSet<string> {
+                "script",
+                "style",
+                "meta"
             };
             BrowserReady = new ManualResetEvent(false);
             BrowserStaThread = RunInBrowserThread((getPageInternal, getTimedOut) =>
@@ -90,12 +96,12 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
 
         private void ToXmlElement(HtmlElement htmlElement, XmlElement parent)
         {
-            if (htmlElement == null || !Char.IsLetterOrDigit(htmlElement.TagName, 0))
+            if (htmlElement == null || !Char.IsLetterOrDigit(htmlElement.TagName, 0) || ElementsToSkip.Contains(htmlElement.TagName.ToLower()))
             {
                 return;
             }
 
-            var xmlElement = Document.CreateElement(htmlElement.TagName);
+            var xmlElement = Document.CreateElement(htmlElement.TagName.ToLower());
             AttributesToCopy
                 .ToList()
                 .ForEach(attribute => xmlElement.SetAttribute(attribute.Value, htmlElement.GetAttribute(attribute.Key)));

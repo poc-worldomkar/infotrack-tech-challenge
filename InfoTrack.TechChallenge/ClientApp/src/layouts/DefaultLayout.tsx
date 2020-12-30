@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Link, useHistory } from "react-router-dom";
-// import "./NavMenu.css";
+import * as React from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   AppBar,
   CssBaseline,
@@ -15,25 +14,25 @@ import {
   Toolbar,
   Typography,
   useTheme,
-} from "@material-ui/core";
+} from '@material-ui/core';
 import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
   ChevronRight as ChevronRightIcon,
   Settings as SettingsIcon,
   Home as HomeIcon,
-} from "@material-ui/icons";
-import clsx from "clsx";
+} from '@material-ui/icons';
+import clsx from 'clsx';
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
+    display: 'flex',
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(["width", "margin"], {
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   appBarShift: {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["width", "margin"], {
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
@@ -50,42 +49,47 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 36,
   },
   hide: {
-    display: "none",
+    display: 'none',
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    whiteSpace: "nowrap",
+    whiteSpace: 'nowrap',
   },
   drawerOpen: {
     width: drawerWidth,
-    transition: theme.transitions.create("width", {
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
   drawerClose: {
-    transition: theme.transitions.create("width", {
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    overflowX: "hidden",
+    overflowX: 'hidden',
     width: theme.spacing(7) + 1,
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9) + 1,
     },
   },
   toolbar: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    flexShrink: 1,
+    height: '100vh',
+    overflowY: 'auto',
+    padding: theme.spacing(2),
+    display: 'flex',
+    flexDirection: 'column',
   },
 }));
 
@@ -108,30 +112,30 @@ const DefaultLayout = (props: { children?: React.ReactNode }) => {
     <header className={classes.root}>
       <CssBaseline />
       <AppBar
-        position="fixed"
+        position='fixed'
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
       >
         <Toolbar>
           <IconButton
-            color="inherit"
-            aria-label="open drawer"
+            color='inherit'
+            aria-label='open drawer'
             onClick={handleDrawerOpen}
-            edge="start"
+            edge='start'
             className={clsx(classes.menuButton, {
               [classes.hide]: open,
             })}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="h1" noWrap>
+          <Typography variant='h6' component='h1' noWrap>
             InfoTrack Tech Challenge
           </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
-        variant="permanent"
+        variant='permanent'
         className={clsx(classes.drawer, {
           [classes.drawerOpen]: open,
           [classes.drawerClose]: !open,
@@ -145,7 +149,7 @@ const DefaultLayout = (props: { children?: React.ReactNode }) => {
       >
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "rtl" ? (
+            {theme.direction === 'rtl' ? (
               <ChevronRightIcon />
             ) : (
               <ChevronLeftIcon />
@@ -154,21 +158,21 @@ const DefaultLayout = (props: { children?: React.ReactNode }) => {
         </div>
         <Divider />
         <List>
-          <ListItem button key="Home" onClick={() => history.push("/")}>
+          <ListItem button key='Home' onClick={() => history.push('/')}>
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText primary='Home' />
           </ListItem>
           <ListItem
             button
-            key="Configuration"
-            onClick={() => history.push("/configuration")}
+            key='Configuration'
+            onClick={() => history.push('/configuration')}
           >
             <ListItemIcon>
               <SettingsIcon />
             </ListItemIcon>
-            <ListItemText primary="Configuration" />
+            <ListItemText primary='Configuration' />
           </ListItem>
         </List>
       </Drawer>

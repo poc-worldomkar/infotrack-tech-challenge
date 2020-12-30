@@ -16,14 +16,14 @@ namespace InfoTrack.TechChallenge.Logic
         static BusinessLogicOptions()
         {
             StaticSearchEngineOptions = new List<WebScraperSearchEngineOptionsInfotrackStatic> {
-                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Bing", ResultXpathSelector = "//LI[@class=\"b_algo\"]//CITE" },
-                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Google", ResultXpathSelector = "//DIV//A[@href][DIV/CITE]" }
+                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Bing", ResultXpathSelector = "//li[@class=\"b_algo\"]//cite" },
+                new WebScraperSearchEngineOptionsInfotrackStatic { SearchEngineName = "Google", ResultXpathSelector = "//div//a[@href][div/cite]" }
             };
             LiveSearchEngineOptions = new List<WebScraperSearchEngineOptions>
             {
                 new WebScraperSearchEngineOptions{
                     SearchEngineName = "Bing",
-                    ResultXpathSelector = "//LI[@class=\"b_algo\"]//CITE",
+                    ResultXpathSelector = "//li[@class=\"b_algo\"]//cite",
                     SearchEngineBaseUrlPath = "https://www.bing.com/search",
                     ParameterNameQuery = "q",
                     ParameterNameRecordsSkip = "first",
@@ -31,7 +31,7 @@ namespace InfoTrack.TechChallenge.Logic
                     IndexStartsAtOne = true },
                 new WebScraperSearchEngineOptions{
                     SearchEngineName = "Google",
-                    ResultXpathSelector = "//DIV//A[@href][DIV/CITE]",
+                    ResultXpathSelector = "//div//a[@href][div/cite]",
                     SearchEngineBaseUrlPath = "https://www.google.com.au/search",
                     ParameterNameQuery = "q",
                     ParameterNameRecordsSkip = "start" }

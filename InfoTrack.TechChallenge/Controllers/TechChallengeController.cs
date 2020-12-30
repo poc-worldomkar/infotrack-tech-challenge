@@ -25,17 +25,24 @@ namespace InfoTrack.TechChallenge.Controllers
         [HttpPost]
         [Route("seo-index-check")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IEnumerable<int>> SeoIndexCheck([FromBody] SeoIndexCheckRequest seoIndexCheckRequest)
+        public async Task<ActionResult> SeoIndexCheck([FromBody] SeoIndexCheckRequest seoIndexCheckRequest)
         {
             Guard.ArgumentNotNullOrEmpty(seoIndexCheckRequest.SearchEngine, "searchEngine");
             Guard.ArgumentNotNullOrEmpty(seoIndexCheckRequest.Query, "query");
 
-            var seoIndexResult = await Logic.InfotrackSeoCheckIndexes(
-                seoIndexCheckRequest.SearchEngine,
-                seoIndexCheckRequest.UseStaticPages,
-                seoIndexCheckRequest.Query,
-                DefaultMaxResults);
-            return seoIndexResult;
+            try
+            {
+                var seoIndexResult = await Logic.InfotrackSeoCheckIndexes(
+                    seoIndexCheckRequest.SearchEngine,
+                    seoIndexCheckRequest.UseStaticPages,
+                    seoIndexCheckRequest.Query,
+                    DefaultMaxResults);
+                return new JsonResult(seoIndexResult);
+            }
+            catch (Exception e)
+            {
+                return new BadRequestObjectResult(new { Error = e.Message });
+            }
         }
 
         [HttpGet]
@@ -51,7 +58,7 @@ namespace InfoTrack.TechChallenge.Controllers
         [Route("new-search-engine")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> NewSearchEngine([FromBody]WebScraperSearchEngineOptions newSearchEngine)
+        public ActionResult NewSearchEngine([FromBody] WebScraperSearchEngineOptions newSearchEngine)
         {
             Guard.ArgumentNotNullOrEmpty(newSearchEngine.SearchEngineName, "searchEngineName");
             Guard.ArgumentNotNullOrEmpty(newSearchEngine.SearchEngineBaseUrlPath, "searchEngineBaseUrlPath");
@@ -60,11 +67,12 @@ namespace InfoTrack.TechChallenge.Controllers
 
             try
             {
+                // TODO: Persist to sqlite or something
                 BusinessLogicOptions.AddNewSearchEngine(newSearchEngine);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                return new BadRequestObjectResult(new { Error = e.Message } );
+                return new BadRequestObjectResult(new { Error = e.Message });
             }
 
             return new NoContentResult();
