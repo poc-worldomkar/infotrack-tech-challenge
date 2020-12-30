@@ -62,7 +62,7 @@ const FormAddSearchEngine = (props: FormAddSearchEngineProps) => {
   const { onSubmit } = props;
   return (
     <Formik initialValues={newSearchEngine} onSubmit={onSubmit}>
-      {({ handleSubmit, values }) => {
+      {({ handleSubmit, values }: any) => {
         const { staticPages } = values;
         return (
           <form onSubmit={handleSubmit}>

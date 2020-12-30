@@ -122,11 +122,11 @@ const Configuration = (props: ConfigurationProps) => {
           .then((response: any) => {
             props.setSearchEngines(response.data);
           })
-          .catch((error) => {
+          .catch((error: any) => {
             console.error(error);
           });
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.error(error);
       });
   };
