@@ -125,7 +125,7 @@ const DefaultLayout = (props: { children?: React.ReactNode }) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" component="h1" noWrap>
             InfoTrack Tech Challenge
           </Typography>
         </Toolbar>

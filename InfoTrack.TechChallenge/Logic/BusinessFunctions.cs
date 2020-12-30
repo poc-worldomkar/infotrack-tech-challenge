@@ -14,7 +14,7 @@ namespace InfoTrack.TechChallenge.Logic
             SearchEngine = webScraperSearchEngine;
         }
 
-        public async Task<IEnumerable<int>> InfotrackSeoCheckIndexes(string searchEngine = "Bing", bool useStaticPages = true, string query = "", int maximumResults = 10)
+        public async Task<IEnumerable<int>> InfotrackSeoCheckIndexes(string searchEngine, bool useStaticPages, string query, int maximumResults = 10)
         {
             var searchEngineOptions = BusinessLogicOptions.GetSearchEngineOptions(searchEngine, useStaticPages);
             var scrapeSearchResults = await SearchEngine.SearchWithQueryAsync(searchEngineOptions, query, maximumResults);

@@ -1,9 +1,9 @@
 {
   "folders": [
-	{
-		"path": "InfoTrack.TechChallenge\\ClientApp"
-	}
-],
+    {
+      "path": "InfoTrack.TechChallenge\\ClientApp"
+    }
+  ],
   "settings": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnType": true,

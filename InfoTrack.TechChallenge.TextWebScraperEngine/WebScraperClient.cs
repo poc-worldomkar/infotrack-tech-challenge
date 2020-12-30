@@ -33,6 +33,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
             InnerTextElements = new HashSet<string>
             {
                 "a",
+                "b",
                 "cite",
                 "span",
                 "p"
@@ -70,6 +71,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
                 BrowserReady.WaitOne();
                 var url = options.GetUrl(query, pageNumber, pageSize, dynamicPageCursorPosition);
                 var htmlDocument = GetPageInternal(url.ToString(), out var timedOut);
+                Console.WriteLine(htmlDocument.Body.OuterHtml);
                 LoadXmlTree(htmlDocument, Document);
                 return Document;
             }

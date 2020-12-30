@@ -71,7 +71,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine.Models
         {
             var searchUrlParts = new KeyValueList<string, string> {
                 { ParameterNameQuery, HttpUtility.UrlEncode(query) },
-                { ParameterNamePage, pageNumber.ToString() },
+                { ParameterNamePage, (pageNumber + (IndexStartsAtOne ? 1: 0)).ToString() },
                 { ParameterNamePageSize, pageSize.ToString() },
                 { ParameterNameRecordsSkip,
                     (DynamicPageSize && dynamicPageCursorPosition != -1)

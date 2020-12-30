@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using System.Xml;
@@ -38,9 +37,12 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
             {
                 var page = await WebScraperClient.GetPage(options, query, pageNumber, pageSize, dynamicPageCursorPosition);
                 var xmlResultNodes = page.DocumentElement.SelectNodes(options.ResultXpathSelector);
-                if (page.DocumentElement.ChildNodes.Count == 0 || xmlResultNodes.Count == 0)
+                if (pageNumber == 0 && xmlResultNodes.Count == 0)
                 {
                     // Google complains about unusual traffic
+                    // Yahoo gives out different web page for our webclient
+                    //      We may need to select other web client to extend functionality -- probably puppeteer/chrome
+                    throw new Exception(page.OuterXml);
                 }
 
                 var links = xmlResultNodes.Cast<XmlNode>()

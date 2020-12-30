@@ -21,7 +21,7 @@ namespace InfoTrack.TechChallenge.WebScraperEngine
             private HtmlDocument Document;
             private string Url;
 
-            // Workaround magics -- TODO: Avoid in future
+            // Polling intervals -- TODO: Replace in future with using message pump
             private const int PageLoadTimeoutCheckInterval = 50;   // 50 mseconds; can later be moved to appsettings
             private const int NewRequestCheckInterval = 100;   // 100 mseconds; can later be moved to appsettings
             private const int PageLoadTimeoutInterval = 3000;   // 3 seconds; can later be moved to appsettings

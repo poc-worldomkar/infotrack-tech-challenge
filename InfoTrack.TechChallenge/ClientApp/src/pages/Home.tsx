@@ -1,7 +1,6 @@
-import * as React from "react";
-import { connect } from "react-redux";
+import * as React from 'react';
+import { connect, shallowEqual, useSelector } from 'react-redux';
 import {
-  Box,
   Button,
   Checkbox,
   FormControl,
@@ -14,9 +13,11 @@ import {
   Select,
   TextField,
   Typography,
-} from "@material-ui/core";
-import { useState } from "react";
-import techChallengeApi from "../api/techChallengeApi";
+} from '@material-ui/core';
+import { useMemo, useState } from 'react';
+import techChallengeApi from '../api/techChallengeApi';
+import { ApplicationState } from '../store';
+import * as ConfigurationStore from '../store/Configuration';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -28,9 +29,33 @@ const Home = () => {
   const classes = useStyles();
   const [checkInProgress, setCheckInProgress] = useState(false);
   const [result, setResult] = useState<number[]>([]);
-  const [searchEngine, setSearchEngine] = useState("Bing");
+  const [searchEngine, setSearchEngine] = useState('');
   const [useStaticPages, setUseStaticPages] = useState(true);
-  const [query, setQuery] = useState("online title search");
+  const [query, setQuery] = useState('online title search');
+
+  const searchEngines = useSelector(
+    (state: any) => state.configuration.searchEngines,
+    shallowEqual
+  );
+
+  const searchEngineMenuItems = useMemo(() => {
+    var searchEngineMenuItems = searchEngines
+      .filter((searchEngine: any) =>
+        useStaticPages ? searchEngine.staticPages : !searchEngine.staticPages
+      )
+      .map((searchEngine: any) => (
+        <MenuItem
+          value={searchEngine.searchEngineName}
+          key={searchEngine.searchEngineName}
+        >
+          {searchEngine.searchEngineName}
+        </MenuItem>
+      ));
+    searchEngines.length > 0 &&
+      !searchEngine &&
+      setSearchEngine(searchEngines[0].searchEngineName);
+    return searchEngineMenuItems;
+  }, [searchEngines, useStaticPages]);
 
   const handleSeoCheck = () => {
     setCheckInProgress(true);
@@ -41,21 +66,28 @@ const Home = () => {
         if (response.data.length == 0) {
           setResult([0]);
         }
+      })
+      .catch((error) => {
+        console.error(error);
+      })
+      .finally(() => {
         setCheckInProgress(false);
       });
   };
 
   return (
-    <Grid container direction="column" spacing={2}>
+    <Grid container direction='column' spacing={2}>
       <Grid item>
         {checkInProgress && <LinearProgress />}
-        <Typography variant="h6">InfoTrack Seo Index Check</Typography>
+        <Typography variant='h6' component='h2'>
+          InfoTrack Seo Index Check
+        </Typography>
       </Grid>
       <Grid item>
         <TextField
-          id="query"
-          label="Query"
-          variant="outlined"
+          id='query'
+          label='Query'
+          variant='outlined'
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           fullWidth
@@ -63,20 +95,19 @@ const Home = () => {
       </Grid>
       <Grid item>
         <FormControl
-          variant="outlined"
+          variant='outlined'
           className={classes.formControl}
           fullWidth
         >
-          <InputLabel id="search-engine-label">Search Engine</InputLabel>
+          <InputLabel id='search-engine-label'>Search Engine</InputLabel>
           <Select
-            labelId="search-engine-label"
-            id="search-engine"
+            labelId='search-engine-label'
+            id='search-engine'
             value={searchEngine}
             onChange={(e) => setSearchEngine(e.target.value as string)}
-            label="Search Engine"
+            label='Search Engine'
           >
-            <MenuItem value="Bing">Bing</MenuItem>
-            <MenuItem value="Google">Google</MenuItem>
+            {searchEngineMenuItems}
           </Select>
         </FormControl>
       </Grid>
@@ -86,17 +117,17 @@ const Home = () => {
             <Checkbox
               checked={useStaticPages}
               onChange={(e) => setUseStaticPages(!useStaticPages)}
-              name="useStaticPages"
-              color="primary"
+              name='useStaticPages'
+              color='primary'
             />
           }
-          label="Use static pages"
+          label='Use static pages'
         />
       </Grid>
       <Grid item>
         <Button
-          variant="contained"
-          color="primary"
+          variant='contained'
+          color='primary'
           disabled={checkInProgress}
           onClick={handleSeoCheck}
           fullWidth
@@ -106,11 +137,16 @@ const Home = () => {
       </Grid>
       <Grid item>
         {result.length > 0 && (
-          <Typography variant="h6">SEO Indexes: {result.join(", ")}</Typography>
+          <Typography variant='h6' component='h2'>
+            SEO Indexes: {result.join(', ')}
+          </Typography>
         )}
       </Grid>
     </Grid>
   );
 };
 
-export default connect()(Home);
+export default connect(
+  (state: ApplicationState) => state,
+  ConfigurationStore.actionCreators
+)(Home);
