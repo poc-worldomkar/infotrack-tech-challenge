@@ -85,7 +85,7 @@ namespace InfoTrack.TechChallenge.Logic
             else
             {
                 var liveSearchEngine = searchEngineOptions as WebScraperSearchEngineOptions;
-                   var newLiveSearchEngineOptions = new WebScraperSearchEngineOptions()
+                var newLiveSearchEngineOptions = new WebScraperSearchEngineOptions()
                 {
                     SearchEngineName = liveSearchEngine.SearchEngineName,
                     StaticPages = liveSearchEngine.StaticPages,
