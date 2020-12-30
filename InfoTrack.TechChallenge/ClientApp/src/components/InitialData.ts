@@ -9,10 +9,10 @@ const InitialData = (props: any) => {
   useEffect(() => {
     techChallengeApi
       .getSearchEngines()
-      .then((response) => {
+      .then((response: any) => {
         setSearchEngines(response.data);
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.error(error);
       });
   }, [setSearchEngines]);

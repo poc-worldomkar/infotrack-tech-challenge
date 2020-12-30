@@ -14,7 +14,7 @@
     "jsx": "preserve",
     "lib": ["es2015", "dom"],
     "skipLibCheck": false,
-    "types": ["jest", "node"]
+    "types": ["node", "jest"]
   },
   "include": ["src"]
 }
