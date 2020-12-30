@@ -55,5 +55,51 @@ namespace InfoTrack.TechChallenge.Logic
             var liveSearchEngineOptions = LiveSearchEngineOptions.FirstOrDefault(options => options.SearchEngineName == searchEngine);
             return liveSearchEngineOptions;
         }
+
+        public static IEnumerable<WebScraperSearchEngineOptions> GetSearchEngines()
+        {
+            var searchEngines = new List<WebScraperSearchEngineOptions>();
+            searchEngines.AddRange(
+                BusinessLogicOptions.StaticSearchEngineOptions.Select(staticOptions =>
+                    new WebScraperSearchEngineOptions
+                    {
+                        SearchEngineName = staticOptions.SearchEngineName,
+                        ResultXpathSelector = staticOptions.ResultXpathSelector,
+                        StaticPages = staticOptions.StaticPages
+                    }));
+            searchEngines.AddRange(BusinessLogicOptions.LiveSearchEngineOptions);
+            return searchEngines;
+        }
+
+        public static void AddNewSearchEngine(IWebScraperSearchEngineOptions searchEngineOptions)
+        {
+            if (searchEngineOptions.StaticPages)
+            {
+                var newStaticSearchEngineOptions = new WebScraperSearchEngineOptionsInfotrackStatic
+                {
+                    SearchEngineName = searchEngineOptions.SearchEngineName,
+                    ResultXpathSelector = searchEngineOptions.ResultXpathSelector
+                };
+                StaticSearchEngineOptions.Add(newStaticSearchEngineOptions);
+            }
+            else
+            {
+                var liveSearchEngine = searchEngineOptions as WebScraperSearchEngineOptions;
+                   var newLiveSearchEngineOptions = new WebScraperSearchEngineOptions()
+                {
+                    SearchEngineName = liveSearchEngine.SearchEngineName,
+                    StaticPages = liveSearchEngine.StaticPages,
+                    SearchEngineBaseUrlPath = liveSearchEngine.SearchEngineBaseUrlPath,
+                    ResultXpathSelector = liveSearchEngine.ResultXpathSelector,
+                    ParameterNameQuery = liveSearchEngine.ParameterNameQuery,
+                    ParameterNamePage = liveSearchEngine.ParameterNamePage,
+                    ParameterNamePageSize = liveSearchEngine.ParameterNamePageSize,
+                    ParameterNameRecordsSkip = liveSearchEngine.ParameterNameRecordsSkip,
+                    DynamicPageSize = liveSearchEngine.DynamicPageSize,
+                    IndexStartsAtOne = liveSearchEngine.IndexStartsAtOne
+                };
+                LiveSearchEngineOptions.Add(newLiveSearchEngineOptions);
+            }
+        }
     }
 }

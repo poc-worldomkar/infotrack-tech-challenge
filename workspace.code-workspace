@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"path": "InfoTrack.TechChallenge\\ClientApp"
+	}
+],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "typescript.tsdk": "ClientApp\\node_modules\\typescript\\lib"
+  }
+}

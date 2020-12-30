@@ -1,6 +1,10 @@
 ﻿using InfoTrack.TechChallenge.Logic;
 using InfoTrack.TechChallenge.Models;
+using InfoTrack.TechChallenge.WebScraperEngine.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Practices.EnterpriseLibrary.Common.Utility;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -20,8 +24,12 @@ namespace InfoTrack.TechChallenge.Controllers
 
         [HttpPost]
         [Route("seo-index-check")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IEnumerable<int>> SeoIndexCheck([FromBody] SeoIndexCheckRequest seoIndexCheckRequest)
         {
+            Guard.ArgumentNotNullOrEmpty(seoIndexCheckRequest.SearchEngine, "searchEngine");
+            Guard.ArgumentNotNullOrEmpty(seoIndexCheckRequest.Query, "query");
+
             var seoIndexResult = await Logic.InfotrackSeoCheckIndexes(
                 seoIndexCheckRequest.SearchEngine,
                 seoIndexCheckRequest.UseStaticPages,
@@ -30,11 +38,36 @@ namespace InfoTrack.TechChallenge.Controllers
             return seoIndexResult;
         }
 
-        //[HttpPost]
-        //[Route("new-search-engine")]
-        //public async Task<ActionResult> NewSearchEngine()
-        //{
+        [HttpGet]
+        [Route("get-search-engines")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IEnumerable<WebScraperSearchEngineOptions> GetSearchEngines()
+        {
+            var searchEngines = BusinessLogicOptions.GetSearchEngines();
+            return searchEngines;
+        }
 
-        //}
+        [HttpPost]
+        [Route("new-search-engine")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> NewSearchEngine([FromBody]WebScraperSearchEngineOptions newSearchEngine)
+        {
+            Guard.ArgumentNotNullOrEmpty(newSearchEngine.SearchEngineName, "searchEngineName");
+            Guard.ArgumentNotNullOrEmpty(newSearchEngine.SearchEngineBaseUrlPath, "searchEngineBaseUrlPath");
+            Guard.ArgumentNotNullOrEmpty(newSearchEngine.ResultXpathSelector, "ResultXpathSelector");
+            Guard.ArgumentNotNullOrEmpty(newSearchEngine.ParameterNameQuery, "ParameterNameQuery");
+
+            try
+            {
+                BusinessLogicOptions.AddNewSearchEngine(newSearchEngine);
+            }
+            catch(Exception e)
+            {
+                return new BadRequestObjectResult(new { Error = e.Message } );
+            }
+
+            return new NoContentResult();
+        }
     }
 }
